@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Email Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+        }
+        .content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Email Verification</h1>
+        </div>
+        <div class="content">
+            <p>Hello <%= name %>,</p>
+            <p>Thank you for signing up with <%= appName %>! Before you get started we need you to confirm your email
+                address. Please enter the 4-digit code to
+                verify/activate your account.</p>
+            <p>Your verification code is: <strong><%= verificationCode %></strong></p>
+            <p>If you did not request this verification, you can safely ignore this email.</p>
+        </div>
+    </div>
+</body>
+</html>
